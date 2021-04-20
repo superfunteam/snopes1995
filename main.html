@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+
+  <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
+  <script>
+      jQuery(function($) {
+        
+        $("#rss-feeds").rss("http://snopes.com/feed", {
+          layoutTemplate: "<ul class='max-w-5xl mx-auto px-12 mt-24 pb-24'><li class='text-yellow text-xl mb-6'>2021 Headlines (via time travel)</li>{entries}</ul>",
+          entryTemplate: "<li><a target='_blank' class='block text-white text-xl' href='{url}'>· {title}</a></li>"
+        });
+      });
+    </script>
+  <title>Snopes.com</title>
+</head>
+<body class="antialiased h-full mt-16">
+
+ <h1 class="text-white text-4xl text-center">Urban Legends Reference Pages</h1>
+  <p class="text-yellow text-xl text-center mb-12">www.snopes.com</p>
+
+<div class="flex flex-wrap px-12">
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="https://www.snopes.com/fact-check/category/automobiles/" target="_blank">
+  <img src="images/pig.png" class="inline w-48" alt="">
+  <p class="block text-xl text-white text-center" style="color:#EBAAAE">Critter Country</p>
+  </a>
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <img src="images/skull.png" class="inline w-40 mb-4" alt="">
+  <p class="block text-xl text-white text-center" style="color:#9FD1B4">Horrors</p>
+  </a>
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <img src="images/lock.png" class="inline w-32 my-6" alt="">
+  <p class="block text-xl text-white">Coming Soon</p>
+  </a>
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <img src="images/lock.png" class="inline w-32 my-6" alt="">
+  <p class="block text-xl text-white">Coming Soon</p>
+  </a>
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <img src="images/lock.png" class="inline w-32 my-6" alt="">
+  <p class="block text-xl text-white">Coming Soon</p>
+  </a>
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <img src="images/lock.png" class="inline w-32 my-6" alt="">
+  <p class="block text-xl text-white">Coming Soon</p>
+  </a>
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <img src="images/lock.png" class="inline w-32 my-6" alt="">
+  <p class="block text-xl text-white">Coming Soon</p>
+  </a>
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <img src="images/lock.png" class="inline w-32 my-6" alt="">
+  <p class="block text-xl text-white">Coming Soon</p>
+  </a>
+
+  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <img src="images/lock.png" class="inline w-32 my-6" alt="">
+  <p class="block text-xl text-white">Coming Soon</p>
+  </a>
+
+</div>
+
+<div id="rss-feeds"></div>
+
+<p class="text-xl text-white max-w-5xl px-12 mx-auto pb-24">&copy; 1995-2021 Snopes.com</p>
+
+</body>
+</html>
