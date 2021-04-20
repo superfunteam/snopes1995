@@ -3,17 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://unpkg.com/98.css">
 
-  <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
   <script>
       jQuery(function($) {
         
-        $("#rss-feeds").rss("http://snopes.com/feed", {
+        $("#rss-feeds").rss("https://snopes.com/feed", {
           layoutTemplate: "<ul class='max-w-5xl mx-auto px-12 mt-24 pb-24'><li class='text-yellow text-xl mb-6'>2021 Headlines (via time travel)</li>{entries}</ul>",
           entryTemplate: "<li><a target='_blank' class='block text-white text-xl' href='{url}'>· {title}</a></li>"
         });
