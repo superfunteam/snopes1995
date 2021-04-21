@@ -12,8 +12,8 @@
       jQuery(function($) {
         
         $("#rss-feeds").rss("https://snopes.com/feed", {limit: 10,
-          layoutTemplate: "<ul class='max-w-5xl mx-auto px-12 mt-24 pb-24'><li class='text-yellow text-xl mb-6'>2021 Headlines (via time travel)</li>{entries}</ul>",
-          entryTemplate: "<li><a target='_blank' class='block text-white text-xl' href='{url}'>· {title}</a></li>"
+          layoutTemplate: "<ul class='max-w-5xl mx-auto px-12 mt-24 pb-8'><li class='text-yellow text-xl mb-6'>2021 Headlines (via time travel)</li>{entries}</ul>",
+          entryTemplate: "<li><a target='_blank' class='block text-white text-xl hover:text-blue' href='{url}'>· {title}</a></li>"
         });
       });
     </script>
@@ -26,12 +26,12 @@
 
 <div class="flex flex-wrap px-12">
 
-  <a class="card px-4 w-1/3 text-center mb-8" href="https://www.snopes.com/fact-check/category/automobiles/" target="_blank">
+  <a class="card px-4 w-1/3 text-center mb-8" href="https://www.snopes.com/fact-check/category/animals/" target="_blank">
   <img src="images/pig.png" class="inline w-48" alt="">
   <p class="block text-xl text-white text-center" style="color:#EBAAAE">Critter Country</p>
   </a>
 
-  <a class="card px-4 w-1/3 text-center mb-8" href="#">
+  <a class="card px-4 w-1/3 text-center mb-8" href="https://www.snopes.com/fact-check/category/horrors/">
   <img src="images/skull.png" class="inline w-40 mb-4" alt="">
   <p class="block text-xl text-white text-center" style="color:#9FD1B4">Horrors</p>
   </a>
@@ -74,6 +74,28 @@
 </div>
 
 <div id="rss-feeds"></div>
+
+<div class="window mx-auto my-12" style="width: 250px; transform:scale(1.4)">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Help support Snopes.com
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p class="mb-2">The future is full of misinformation, and for as little as $5, you can help.</p>
+        <section class="field-row" style="justify-content: flex-end">
+          <form action="https://www.snopes.com/founding-members/">
+          <button>I want to help</button>
+          </form>
+        </section>
+      </div>
+    </div>
 
 <p class="text-xl text-white max-w-5xl px-12 mx-auto pb-24">&copy; 1995-2021 Snopes.com</p>
 
