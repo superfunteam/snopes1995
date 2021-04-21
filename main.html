@@ -11,7 +11,7 @@
   <script>
       jQuery(function($) {
         
-        $("#rss-feeds").rss("https://snopes.com/feed", {
+        $("#rss-feeds").rss("https://snopes.com/feed", {limit: 10,
           layoutTemplate: "<ul class='max-w-5xl mx-auto px-12 mt-24 pb-24'><li class='text-yellow text-xl mb-6'>2021 Headlines (via time travel)</li>{entries}</ul>",
           entryTemplate: "<li><a target='_blank' class='block text-white text-xl' href='{url}'>· {title}</a></li>"
         });
